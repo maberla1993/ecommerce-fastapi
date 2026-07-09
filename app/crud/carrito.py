@@ -75,7 +75,7 @@ def agregar_item(
             ItemCarrito.carrito_id == carrito_id,
             ItemCarrito.producto_id == producto_id
         )
-        .first
+        .first()
     )
 
     # Si ya existe, aumentamos la cantidad.
